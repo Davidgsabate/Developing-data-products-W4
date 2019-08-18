@@ -17,7 +17,6 @@ shinyServer(
             output$oid1 = renderPrint({as.character(round(numCalDay), 0)})
             
           # Generation of the dataset with a linear model  
-            kilos <- seq(target_w, actual_w)
             date <- seq(today, target_date, by = "1 days")
            
             tib <- tibble(date) %>%
